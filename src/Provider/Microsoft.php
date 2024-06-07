@@ -67,6 +67,16 @@ class Microsoft extends AbstractProvider
     }
 
     /**
+     * Returns the string that will be used to separate scopes in auth url
+     *
+     * @return string Scope separator, defaults to ' '
+     */
+    protected function getScopeSeparator()
+    {
+        return ' ';
+    }
+
+    /**
      * Check a provider response for errors.
      *
      * @throws IdentityProviderException
